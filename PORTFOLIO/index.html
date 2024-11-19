@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1>BHIRUNTHA C</h1>
+            <ul>
+                <li><i class="fa-solid fa-house-chimney"></i>  <a href="./index.html">Home</a></li>
+                <li><i class="fa-solid fa-address-card"></i>  <a href="#about">About</a></li>
+                <li><i class="fa-sharp fa-solid fa-microchip"></i>  <a href="#skills">Skills</a></li>
+                <li><i class="fa-solid fa-list-check"></i>  <a href="#projects">Projects</a></li>   
+                <li><i class="fa-solid fa-address-book"></i>  <a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h2>Hi, I'm <span>Bhiruntha</span><br> from chennai </h2>
+        </div>
+    </div>
+</div>
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class ="about-col-1">
+                <img src="images/fin.jpg">
+            </div>
+            <div class ="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am brindha from avc college of engineering student at mayiladuthurai</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Resume')">Resume</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Frnd End Development </span><br>HTML<br>css<br>JavaScript</li>
+                        <li><span>Databases </span><br>MYSQL</li>
+                        <li><span>Back End Development </span><br>Programming in C<br>C++<br>JAVA<br> Python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2023</span><br>MCA from AVC College of engineering</li>
+                        <li><span>2021</span><br>BCA from Kalaimahal College of Arrts and Science</li>
+                        <li><span>2018</span><br>HSE from Srinivasa Higher Secondary School</li>
+                        <li><span>2016</span><br>SSLC from Srinivasa Higher Secondary School</li>
+
+
+                    </ul>
+                </div>
+                <div class = 'tab-contents' id ="Resume">
+                    <ul>
+                        <li><span> Resume</span></li>
+                        <a href="images/my resume.pdf" class="download-btn" download>Download My Resume</a>
+
+                    </ul>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="skills">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="skill-icon fas fa-code"></i>
+                <h3>Frnd End Development</h3>
+                <p>HTML, CSS, and JavaScript.</p>
+            </div>
+                <div class="skill-card">
+                    <i class="skill-icon fas fa-database"></i>
+                    <h3>Database</h3>
+                    <p> MySQL.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="skill-icon fab fa-python"></i>
+                    <h3>Back End Development</h3>
+                    <p>C,C++,JAVA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="projects">
+    <h2 class="sub-title">My Projects</h2>
+    <div class="project-container">
+        <div class="project-card">
+            <img src="images/Project-1.jfif" alt="Project 1" class="project-image">
+            <div class="project-details">
+                <h3 class="project-title">Event Management</h3>
+                <p class="project-description">Developed using HTML and CSS</p>
+                <a href="https://www.linkedin.com/posts/bhiruntha-c-db2001_codsoft-webdevelopment-html-activity-7262050041165484033-wCwX?utm_source=share&utm_medium=member_android" class="project-link">View Project</a> <br/>
+                
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="images/Project-2.jfif" alt="Project 2" class="project-image">
+            <div class="project-details">
+                <h3 class="project-title">Calculator</h3>
+                <p class="project-description">Developed using HTML, CSS and JavaScript </p> 
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7264617839762751488/" class="project-link">View Project</a>
+                
+            </div>
+        </div>    
+    </div>
+    </div>
+</section>
+
+
+    <div id="Contact">
+        <div class = "container">
+            <div class="row">
+                <div class ="contact-left"> 
+                    <h2 class ="sub-title">Contact Me</h2>
+                    <p><i class="fa-regular fa-envelope"></i> Email: <a href="mailto:bhirunthachakkaravarthi@gmail.com">bhirunthachakkaravarthi@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone-volume"></i> Phone: <a href="tel:9865435789">9865435789</a></p>
+
+                    <div class="social-icons">
+                        <a href ="https://www.linkedin.com/in/bhiruntha-c-db2001"><i class="fab fa-linkedin"></i></a>
+                        <a href ="https://github.com/bhiruntha2001""><i class="fab fa-git-hub"></i></a>
+                    </div>
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name "required>
+                    <input type="email" name="Email" placeholder="Your Email "required>
+                    <input type="Message" name="Message" rows="6" placeholder="Your Message"required>
+                    <button type ="submit" class ="btn btn2">Submit</button>
+
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-linnk");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+
+
+
+</script>
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; C.Bhiruntha. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-brands fa-github"></i><a href="https://github.com/bhiruntha2001" target="_blank">GitHub</a>
+                <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/bhiruntha-c-db2001" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
